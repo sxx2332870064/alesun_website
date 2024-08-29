@@ -19,9 +19,24 @@ ul {
 }
 
 /* Header and Menu */
+/* Welcome Section - Banner with Background Image */
 .banner {
-    background: #000000;
+    background: url('../images/p25.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Keep text color white for contrast */
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
 }
+
+/* Adjust text within the banner */
+.banner-info {
+    text-align: center;
+    margin: 10% 0;
+    color: #8c8c8c; /* Ensure text is visible over the background image */
+}
+
+/* Other existing styles... */
 
 .logo {
     float: left;
@@ -105,57 +120,28 @@ a.downarrow span {
 }
 
 /* Service Section */
+/* About Me Section - Service with Background Image */
 .service {
-    background: #fff;
+    background: url('../images/p19.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e3e3e3; /* Light gray text color */
     padding: 7em 0;
+    text-align: center; /* Center the text for better readability */
 }
 
-.service-head {
-    text-align: center;
+/* Update service text styles */
+.service-head h3, .service-head h4, .service-grid h3, .service-grid h4 {
+    color: #e4e4e4; /* Light gray color for all headings and paragraphs */
 }
 
-.service-head h3 {
-    color: #000;
-    font-size: 2.7em;
-    font-family: Century Gothic;
-    margin-bottom: 14px;
-    letter-spacing: 1.3px;
-    font-weight: 600;
+/* Add a semi-transparent background for better text readability */
+.service-head, .service-grid {
+    background-color: rgba(0, 0, 0, 0.617); /* Black background with 50% transparency */
+    padding: 20px;
+    border-radius: 10px; /* Optional: rounded corners */
 }
 
-.service-head h4 {
-    color: #000;
-    font-size: 1.2em;
-    word-spacing: 2px;
-    letter-spacing: 1.2px;
-    font-weight: 600;
-    font-family: 'Source Code Pro';
-}
-
-.service-grids {
-    margin-top: 6%;
-}
-
-.service-grid {
-    text-align: center;
-    padding: 10px;
-}
-
-.service-grid h3 {
-    color: #000;
-    font-family: Century Gothic;
-    margin-top: 1.5em;
-    font-weight: 600;
-    font-size: 2.1em;
-}
-
-.service-grid h4 {
-    color: #000;
-    font-size: 1.2em;
-    margin-top: 1em;
-    word-spacing: 1.5px;
-    font-family: 'Source Code Pro';
-}
+/* Other existing styles... */
 
 /* Author Section */
 .author {
